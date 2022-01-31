@@ -83,6 +83,11 @@ type SNSTopicParameters struct {
 	// +immutable
 	// +optional
 	Tags []Tag `json:"tags,omitempty"`
+
+  // When this is set to true, a FIFO topic is created.
+  // +immutable
+  // +optional
+  FifoTopic *bool `json:"fifoTopic,omitempty"`
 }
 
 // SNSTopicSpec defined the desired state of a AWS SNS Topic
